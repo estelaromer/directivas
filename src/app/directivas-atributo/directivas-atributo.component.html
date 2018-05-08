@@ -1,0 +1,8 @@
+<p [ngStyle]="pStyles">
+  directivas-atributo works!
+</p>
+<button (click)="cambiaFondo('red')">Rojo</button>
+<button (click)="cambiaFondo('green')">Verde</button>
+<button (click)="cambiaFondo('yellow')">Amarillo</button>
+
+<p (mouseover)="onMouse(true)" (mouseout)="onMouse(false)" [ngClass]="{'texto-verde':mouseChange, 'grande':true}">Párrafo de las clases</p>
