@@ -1,0 +1,16 @@
+<p>
+  elige-la-puerta works!
+</p>
+
+<div><input type="radio" name="puerta" [(ngModel)]="puerta" value="1" />Puerta 1</div>
+<div><input type="radio" name="puerta" [(ngModel)]="puerta" value="2" />Puerta 2</div>
+<div><input type="radio" name="puerta" [(ngModel)]="puerta" value="3" />Puerta 3</div>
+<div><input type="radio" name="puerta" [(ngModel)]="puerta" value="4" />Puerta 4</div>
+
+<div [ngSwitch]="puerta">
+  <div *ngSwitchCase="1">Has seleccionado la puerta 1</div>
+  <div *ngSwitchCase="2">Has seleccionado la puerta 2</div>
+  <div *ngSwitchCase="3">Has seleccionado la puerta 3</div>
+  <div *ngSwitchCase="4">Has seleccionado la puerta 4</div>
+  <div *ngSwitchDefault></div>
+</div>

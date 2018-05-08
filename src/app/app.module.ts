@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { DirectivasAtributoComponent } from './directivas-atributo/directivas-atributo.component';
 import { SemaforoComponent } from './semaforo/semaforo.component';
 import { ListaPersonasComponent } from './lista-personas/lista-personas.component';
+import { EligeLaPuertaComponent } from './elige-la-puerta/elige-la-puerta.component';
+import { ColorDirective } from './color.directive';
 
 
 @NgModule({
@@ -14,7 +16,9 @@ import { ListaPersonasComponent } from './lista-personas/lista-personas.componen
     AppComponent,
     DirectivasAtributoComponent,
     SemaforoComponent,
-    ListaPersonasComponent
+    ListaPersonasComponent,
+    EligeLaPuertaComponent,
+    ColorDirective
   ],
   imports: [
     BrowserModule, FormsModule
